@@ -3,7 +3,7 @@ from time import sleep
 
 from pika.adapters.blocking_connection import BlockingChannel
 
-from common.connections import connect
+from rabbitmq_lab.common.connections import connect
 
 EXCHANGE_NAME = "comments"
 ROUTING_KEY = "r_k"

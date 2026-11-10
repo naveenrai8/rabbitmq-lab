@@ -2,13 +2,12 @@ import argparse
 
 from pika.adapters.blocking_connection import BlockingChannel
 
-from common.connections import connect
+from rabbitmq_lab.common.connections import connect
 
 EXCHANGE_NAME = "comments"
 ROUTING_KEY = "r_k"
 QUEUE_NAME = "queue_1"
 
-import pika
 
 # Topology ownership: the publisher owns the exchange, the consumer owns its queue and binding.
 # The publisher only knows EXCHANGE_NAME + ROUTING_KEY. It never needs to know QUEUE_NAME.

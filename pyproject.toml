@@ -17,6 +17,8 @@ dependencies = [
 
 [project.scripts]
 rabbitmq-lab = "rabbitmq_lab:main"
+simple-consumer = "rabbitmq_lab.simple.consumer:main"
+simple-publisher = "rabbitmq_lab.simple.publisher:main"
 
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
